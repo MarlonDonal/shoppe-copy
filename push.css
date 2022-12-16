@@ -1,0 +1,417 @@
+@font-face {
+    font-family: Manrope;
+    src: url(fonts/Manrope-VariableFont_wght.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+
+}
+/* #################################################selector############################################ */
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 400px;
+    
+    
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+ div{
+    font-size: 16px;
+    text-align: center;
+ }
+  .select-selected {
+    background-color: rgba(255, 0, 0, 0.881);
+    font-size: 18px;
+    user-select: none;
+
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #FFF;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color:#ff0000;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .customersettup{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  .horizontalCLRWwhite{
+    background-color: #fff;
+    width:  100%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  
+  }
+  .horizontal-hero{
+    background-color: rgba(255, 0, 0, 0.881);
+    width: 100%;
+    height: 600px;
+    
+  }
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+/* ################################selector############################################### */
+
+
+.horizontallines-{
+    background-color:#fff;
+    width: 300px;
+    height:300px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 98;
+
+}
+/* body{
+    margin: 0;
+}
+html {
+    overflow-y: scroll; 
+  } */
+.m2{
+    color: #fff;
+    /* font-size: 16px; */
+    font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+}
+ :root {
+    --background: #fff;
+    --font-color: #000;
+    --backgroud-contents: #87CEEB;
+    
+}
+body {
+    overflow-x: hidden;
+}
+button{
+    cursor: pointer;
+    
+    width: 150px;
+    color: #000;
+    /* border:2px solid #ff0000; */
+    height: 50px;
+    background-color: #fff;
+    border:2px solid #ff0000;
+    
+}
+.m1{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+.m1-m2{
+    background-color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: #ff0000;
+    color:#fff ;
+    border:2px solid #ff0000 ;
+}
+#shoes{
+    width: 600px;
+    z-index: 1;
+}
+.main-object{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.881);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 20px;
+    width: 100%;
+
+     
+}
+
+.sales{
+    position: absolute;
+    font-size: 180px;
+    opacity: 0.1;
+    top: 300px;
+    right: 0;
+    text-transform: uppercase;
+    color:red;
+    text-shadow: 4px 4px 0px #000000;
+    pointer-events: none;
+    user-select: none;
+  
+}
+#maincontainer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#container-2 {
+    display: flex;
+}
+
+#contents---2 {
+    display: flex;
+    gap: 20px;
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    /* background: var(--backgroud-contents); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+#contents--1 {
+    /* background: var(--backgroud-contents); */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    gap: 50px;
+}
+
+#searchbar {
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 8px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color:hsl(210deg 8% 95%) ; 
+   
+}
+form{
+    display: flex;
+    flex-direction:row;
+    gap: 12px;
+    margin-left: 12px;
+}
+input::placeholder{
+    color: #000;
+}
+
+.test-display {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+label{
+    position: relative;
+}
+label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    
+}
+#events{
+    text-transform: uppercase;
+    color: #000;
+    font-size: clamp(1.25rem, -1.875rem + 10vw, 3.75rem);
+     padding: 12px;
+    
+}
+.txt{
+    width: 500px;
+    font-weight: bold;
+    padding: 12px;
+    font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+   
+  
+  
+}
+.total-consumers{
+    margin-left: 20px;
+}
+.shoes-02{
+    font-size: 18px;
+    width: 200px;
+    pointer-events: stroke;
+    
+}
+#mainevents{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    
+}
+.sschool-SH{
+    width: 250px;
+}
+.sschool-SH:hover{
+    transition: .5s ease-in-out;
+    width: 300px;
+}
+.event_shoes{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:8px ;
+    pointer-events: none;
+    
+    
+    
+   
+    
+}
+#mains2{
+    display: flex;
+    width: 100%;
+    /* height:2000px; */
+    padding: 16px;
+    
+    justify-content: center;
+    max-width: 95%;
+   
+
+    /* align-items: center; */
+
+}
+  input {
+    padding: 10px 30px;
+  }
+.test-display:hover {
+    color: #ff0000;
+}
+
+@media only screen and (max-width: 605px) {
+    .test-display {
+        display: none;
+    }
+    #searchbar {
+        width: 100%;
+    }
+    #header {
+        gap: 10px;
+        width: 100%;
+    }
+    #contents---2 {
+        width: 100%;
+    }
+   .event_shoes{
+    
+     margin-top: 10px;
+   }
+   #shoes{
+    width: 400px;
+    margin-top: 100px;
+
+   }
+   #maincontainer{
+    gap: 50px;
+   }
+   .m1-m2{
+     width: 90%;
+     height: 100px;
+     border-radius: 0;
+     
+   }
+   .txt{
+    width: 300px;
+   }
+   #mains2{
+     gap: 20px;
+   }
+}
+@media only screen and (max-width:989px){
+   #mains2{
+    flex-direction: column;
+    display: flex;
+    gap: 120px;
+  
+    padding: 0 10px;
+    
+   }
+   #mainevents{
+    width: 100%;
+    height: 100px;
+   }
+   .event_shoes{
+    width: 100%;
+    
+   }
+}
